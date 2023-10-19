@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:transition_location_animation_ui/views/home_view.dart';
+import 'views/home_view.dart';
 
 void main() {
   runApp(const App());

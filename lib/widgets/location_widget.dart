@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:transition_location_animation_ui/widgets/expanded_widget.dart';
 import '../models/location.dart';
+import 'expanded_widget.dart';
 import 'image_widget.dart';
 
 class LocationWidget extends StatefulWidget {

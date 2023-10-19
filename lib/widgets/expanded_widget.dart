@@ -22,14 +22,20 @@ class ExpandedWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Text(location.addressLine1),
+          Text(
+            location.addressLine1,
+            style: const TextStyle(fontFamily: 'Poppins'),
+          ),
           const SizedBox(height: 8),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 location.addressLine2,
-                style: const TextStyle(color: Colors.black45),
+                style: const TextStyle(
+                  color: Colors.black45,
+                  fontFamily: 'Poppins',
+                ),
               ),
               StarsWidget(stars: location.starRating),
             ],

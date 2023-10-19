@@ -44,6 +44,7 @@ class ImageWidget extends StatelessWidget {
                   Text(
                     location.name,
                     style: const TextStyle(
+                      fontFamily: 'Poppins',
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 20,

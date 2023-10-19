@@ -11,7 +11,10 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: const Text('INTERESTS'),
+        title: const Text(
+          'INTERESTS',
+          style: TextStyle(fontFamily: 'Poppins'),
+        ),
         centerTitle: true,
         actions: [
           IconButton(

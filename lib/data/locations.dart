@@ -4,7 +4,7 @@ import 'reviews.dart';
 List<Location> locations = [
   Location(
     name: 'ATCOASTAL',
-    urlImage: 'assets/sea.jpg',
+    urlImage: 'assets/images/sea.jpg',
     addressLine1: 'La Cresenta-Montrose, CA91020 Glendale',
     addressLine2: 'NO. 791187',
     starRating: 4,
@@ -14,7 +14,7 @@ List<Location> locations = [
   ),
   Location(
     name: 'SYRACUSE',
-    urlImage: 'assets/mountain.jpg',
+    urlImage: 'assets/images/mountain.jpg',
     addressLine1: 'La Cresenta-Montrose, CA91020 Glendale',
     addressLine2: 'NO. 11641',
     starRating: 4,
@@ -24,7 +24,7 @@ List<Location> locations = [
   ),
   Location(
     name: 'OCEANIC',
-    urlImage: 'assets/sea2.jpg',
+    urlImage: 'assets/images/sea2.jpg',
     addressLine1: 'La Cresenta-Montrose, CA91020 Glendale',
     addressLine2: 'NO. 791187',
     starRating: 4,
@@ -34,7 +34,7 @@ List<Location> locations = [
   ),
   Location(
     name: 'MOUNTAINOUS',
-    urlImage: 'assets/mountain2.jpg',
+    urlImage: 'assets/images/mountain2.jpg',
     addressLine1: 'La Cresenta-Montrose, CA91020 Glendale',
     addressLine2: 'NO. 791187',
     starRating: 4,

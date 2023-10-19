@@ -17,12 +17,18 @@ class LatLongWiget extends StatelessWidget {
       children: [
         Text(
           location.latitude,
-          style: const TextStyle(color: Colors.white70),
+          style: const TextStyle(
+            color: Colors.white70,
+            fontFamily: 'Poppins',
+          ),
         ),
         const Icon(Icons.location_on, color: Colors.white70),
         Text(
           location.longitude,
-          style: const TextStyle(color: Colors.white70),
+          style: const TextStyle(
+            color: Colors.white70,
+            fontFamily: 'Poppins',
+          ),
         )
       ],
     );
