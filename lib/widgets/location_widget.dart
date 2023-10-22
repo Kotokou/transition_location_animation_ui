@@ -28,8 +28,8 @@ class _LocationWidgetState extends State<LocationWidget> {
         children: [
           AnimatedPositioned(
             bottom: isExpanded ? 40 : 100,
-            width: isExpanded ? width * 0.78 : 0.7,
-            height: isExpanded ? height * 0.6 : 0.5,
+            width: isExpanded ? width * .78 : width * .7,
+            height: isExpanded ? height * .6 : height * .5,
             duration: const Duration(milliseconds: 500),
             child: ExpandedWidget(location: widget.location),
           ),
@@ -50,7 +50,7 @@ class _LocationWidgetState extends State<LocationWidget> {
               },
               child: ImageWidget(location: widget.location),
             ),
-          )
+          ),
         ],
       ),
     );

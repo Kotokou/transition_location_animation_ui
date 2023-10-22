@@ -15,8 +15,8 @@ class ImageWidget extends StatelessWidget {
     final width = MediaQuery.sizeOf(context).width;
     final height = MediaQuery.sizeOf(context).height;
     return Container(
-      height: height * 0.5,
-      width: width * 0.8,
+      height: height * .5,
+      width: width * .8,
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Container(
         decoration: const BoxDecoration(
