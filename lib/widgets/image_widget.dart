@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '../data/hero_tag.dart';
 import '../models/location.dart';
+import 'hero_widget.dart';
 import 'latlong_widget.dart';
 
 class ImageWidget extends StatelessWidget {
@@ -28,11 +30,14 @@ class ImageWidget extends StatelessWidget {
         child: Stack(
           children: [
             SizedBox.expand(
-              child: ClipRRect(
-                borderRadius: const BorderRadius.all(Radius.circular(8)),
-                child: Image.asset(
-                  location.urlImage,
-                  fit: BoxFit.cover,
+              child: HeroWidget(
+                tag: HeroTag.image(location.urlImage),
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(8)),
+                  child: Image.asset(
+                    location.urlImage,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),

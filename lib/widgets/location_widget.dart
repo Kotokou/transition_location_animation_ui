@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/location.dart';
+import '../views/detail_view.dart';
 import 'expanded_widget.dart';
 import 'image_widget.dart';
 
@@ -37,6 +38,32 @@ class _LocationWidgetState extends State<LocationWidget> {
             duration: const Duration(milliseconds: 500),
             bottom: isExpanded ? 150 : 100,
             child: GestureDetector(
+              onTap: () {
+                if (!isExpanded) {
+                  setState(() => isExpanded = true);
+                  return;
+                }
+
+                Navigator.of(context).push(
+                  PageRouteBuilder(
+                    transitionDuration: const Duration(seconds: 1),
+                    reverseTransitionDuration: const Duration(seconds: 1),
+                    pageBuilder: (context, animation, secondaryAnimation) {
+                      final curveAnimation = CurvedAnimation(
+                        parent: animation,
+                        curve: const Interval(0, .5),
+                      );
+                      return FadeTransition(
+                        opacity: curveAnimation,
+                        child: DetailView(
+                          location: widget.location,
+                          animation: animation,
+                        ),
+                      );
+                    },
+                  ),
+                );
+              },
               onPanUpdate: (details) {
                 if (details.delta.dy < 0) {
                   setState(() {
